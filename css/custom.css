@@ -1,4 +1,4 @@
-.container-small {
+  .container-small {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -22,20 +22,122 @@
 }
 
 .main-jumbotron{
+  background-image: url(../assets/jumbotron/grotemarkt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   height: 40vh;
   margin-bottom: 0;
   display: flex;
+
+}
+
+.card-testimonial{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 0;
 }
 
 .jumbotron-text-overlay{
-  background: rgb(52, 58, 64, 0.8);
+  background: rgb(52, 58, 64);
+  background: rgba(52, 58, 64, 0.9);
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   color: #fff;
   align-self: flex-end;
   width: 70%;
   line-height: 1.8em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+.cta-overlay{
+  display: none;
+  position: absolute;
+  top: 80vh;
+  letter-spacing: 2px;
+}
+
+.cta-overlay-body{
+  background: #f5992c;
+  padding-top: 2.5em;
+  padding-left: 2.5em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  color: #fff;
+  line-height: 1.8em;
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-footer{
+  background: #fff;
+  color: #000;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.cta-social{
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cta-footer, .cta-social a{
+  color: #6c757d;
+}
+
+.cta-social a:hover{
+  color: #ff0c30;
+}
+
+.btn.btn-cta{
+  width: 100%;
+  font-size: 120%;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-weight: bold;
+}
+
+.btn-cta:not(:last-child){
+  margin-bottom: 0.3em;
+}
+
+.btn-cta-wm{
+  background: #fff;
+  color: #f5992c;
+}
+
+.btn-cta-wm:hover{
+  background: #ff0c30;
+  color: #fff;
+}
+
+.btn-cta-dn{
+  background: rgba(52, 58, 64, 0.3);
+  color: #fff;
+}
+
+.btn-cta-dn:hover{
+  background: #ff0c30;
+  color: #fff;
+}
+
+.btn-cta-wp{
+  border: solid 3px #fff;
+  color: #fff;
+}
+
+.btn-cta-wp:hover{
+  background: #ff0c30;
+  border: solid 3px #ff0c30;
+  color: #fff;
 }
 
 .jumbotron-text-overlay.d-block.d-md-none{
@@ -90,17 +192,14 @@
 .main-lead{
   margin-top: 3em;
   margin-bottom: 3em;
-  text-align: center;
 }
 
 .main-lead-display{
-  text-align: center;
   font-style: italic;
   margin-bottom: 1.5em;
 }
 
 .main-lead-paragraph{
-  text-align: center;
   margin-bottom: 2em;
   font-size: 110%;
 }
@@ -122,11 +221,12 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+
 }
 
 @media (min-width: 992px){
   .jumbotron-text-overlay{
-    width: 40%;
+    width: 50%;
   }
 
   #main-menu{
@@ -143,6 +243,32 @@
 
   .navbar-brand{
     margin-left: 0;
+  }
+
+  .cta-overlay{
+    display: block;
+    right: 4%;
+  }
+}
+
+@media (min-width: 1200px){
+    .jumbotron-text-overlay{
+      width: 30%;
+    }
+    .cta-overlay{
+    right: 3%;
+  }
+}
+
+@media (min-width: 1400px){
+  .cta-overlay{
+    right: 10%;
+  }
+}
+
+@media (min-width: 1600px){
+  .cta-overlay{
+    right: 18  %;
   }
 }
 
@@ -166,6 +292,7 @@
 
 #testimonials{
   margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 /* maatje-split */
