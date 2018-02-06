@@ -262,13 +262,19 @@
 
 @media (min-width: 1400px){
   .cta-overlay{
+    right: 7%;
+  }
+}
+
+@media (min-width: 1500px){
+  .cta-overlay{
     right: 10%;
   }
 }
 
 @media (min-width: 1600px){
   .cta-overlay{
-    right: 18  %;
+    right: 19%;
   }
 }
 
